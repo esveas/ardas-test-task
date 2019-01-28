@@ -1,0 +1,115 @@
+body {
+  background-color: whitesmoke;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px 20px 20px;
+  border: 1px solid gray;
+  margin: 30px;
+  transition: 0.1s ease-in;
+}
+
+.task:hover {
+  background-color: white;
+}
+
+.task:hover button {
+  opacity: 1;
+}
+
+.taskList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.button-left {
+  justify-content: flex-start;
+}
+
+button {
+  cursor: pointer;
+  opacity: 0.7;
+  border: 1px solid #c9ae34;
+  color: black;
+  font-family: Verdana;
+  font-size: 18px;
+  padding: 8px 23px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #fce374;
+  transition: 0.2s ease-in;
+}
+button:hover,
+button:active {
+  border: 1px solid gray;
+  background-color: #fcdf5b;
+  color: black;
+  text-shadow: 0 1px 0 #ccc;
+}
+
+.mainInfo {
+  min-width: 200px;
+  width: 90%;
+  padding: 10px;
+}
+
+.description {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  border: 1px solid gray;
+  display: flex;
+  padding: 15px;
+}
+
+.taskDetails {
+  display: flex;
+  justify-content: center;
+}
+
+.inlineName {
+  display: flex;
+  justify-content: flex-start;
+  max-height: 16px;
+}
+
+.inlineLabel {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.inlineLabel:hover::after {
+  border-radius: 10%;
+  content: ' click to edit';
+  color: lightgray;
+}
+
+.inlineInput {
+  margin-left: 3px;
+}
